@@ -1,0 +1,18 @@
+<label ><h4>TUGAS 3</h4></label> <br>
+<button class="btn btn-primary" 
+  (click)="onCreationStatus()">Tampilkan Detail</button>
+  <br>
+  {{word}}
+  <p 
+  
+  *ngFor="let i  of logs; let j = index"
+  [ngClass] = "{online: j >=4}"
+    [ngStyle] ="{'background-color': j>=4 ? 'blue' : 'white'}"
+  >
+    {{i}}
+  </p>
+
+  <!-- <div *ngFor="let log of logs; let i = index of logs">
+      <p 
+          [ngClass]="{lima: i+2>5 ? true : false}">{{i+1}}</p>
+  </div> -->
